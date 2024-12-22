@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.clear-fix {
+    clear: left;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+body {
+    background-image: url(../images/pexels-gochrisgoxyz-1477166.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.upper {
+    margin: auto;
+    width: 15%;
+    padding-top: 10px;
+}
+
+
+.lower {
+    padding-block: 20px;
+    text-align: center;
+
+    .card {
+
+        width: 33.33333%;
+        padding-inline: 10px;
+        float: left;
+
+        .img-caption {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            position: absolute;
+            top: 100%; 
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0; 
+            transition: all 1s ease-in-out;
+            border-radius: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .card-img {
+            position: relative;
+            overflow: hidden;
+            border-radius: 40px;
+        }
+        
+        .card-img:hover .img-caption {
+            top: 0; 
+            opacity: 1; 
+        }
+        
+        .card-img img {
+            width: 100%;
+            transition: transform 1s ease-in-out;
+        }
+        
+        .card-img:hover img {
+            transform: scale(1.1);
+        }
+        
+
+        }
+
+        .price {
+            padding-block: 15px;
+            color: #fff;
+
+            .old-price {
+                color: #7E7F80;
+            }
+        }
+
+        span {
+            padding-inline: 50px;
+        }
+    }
+
+    button {
+        padding-inline: 30px;
+        padding-block: 10px;
+        background-color: #4682B4;
+        border-radius: 20px;
+        border: transparent;
+    }
+
+    button:hover {
+        background-color: #8FA65B;
+    }
